@@ -1,0 +1,17 @@
+<div ngbAccordion [closeOthers]="true">
+	@for (item of items; track item) {
+		<div ngbAccordionItem [collapsed]="item.header !== 'First'">
+			<h2 ngbAccordionHeader>
+				<button ngbAccordionButton>{{ item.header }}</button>
+			</h2>
+			<div ngbAccordionCollapse>
+				<div ngbAccordionBody>
+					<ng-template>
+						{{ item.body }}
+					</ng-template>
+				</div>
+			</div>
+      
+		</div>
+	}
+</div>

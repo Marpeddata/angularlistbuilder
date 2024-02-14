@@ -1,0 +1,31 @@
+/* Custom CSS to change navbar colors */
+.navbar {
+    background-color: #281e27;
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #f9f9f9;
+  }
+  
+  .navbar-toggler-icon {
+    color: #bd2424;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: rgb(232,101,42,255);
+  }
+
+.bannersection {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: #281e27;
+    height: 300px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }  
+ 

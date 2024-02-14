@@ -3,28 +3,28 @@
     <img src="../assets/banner.png" alt="bannerimage">
   </div>
   <div class="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" routerLink="">Warhammock</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/listbuilder">ListBuilder</a>
-            </li>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" routerLink="/">Warhammock</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <!-- [routerLinkActiveOptions]="{ exact: true }" ensure that the links are only "active" when its the current page -->
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/listbuilder">ListBuilder</a>
+          </li>
          
-         
-          </ul>
-        </div>
+        </ul>
       </div>
     </nav>
   </div>
-  <div class="content-container">
-    <router-outlet></router-outlet>
-  </div>
+  
 </div>
-
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>
 
