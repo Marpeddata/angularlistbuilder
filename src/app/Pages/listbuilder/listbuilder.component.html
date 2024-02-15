@@ -1,4 +1,98 @@
-<p>
-  listbuilder works!
-</p>
-<app-accordion [items] = "items"></app-accordion>
+<div class="picksection">
+  <div class="main">
+    <div class="left">
+    <div class="battlesize">
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+              Battle Size
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Combat Patrol</button>
+              <button ngbDropdownItem>Incursion</button>
+              <button ngbDropdownItem>Onslaught</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="army">
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+              Army
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Orks</button>
+              <button ngbDropdownItem>Death Guard</button>
+              <button ngbDropdownItem>Genesteal Cult</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detachment">
+      <!-- Should naturly be will based on the army picked -->
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+              Detachment
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Waaagh! Tribe</button>
+              <button ngbDropdownItem>Plague Company</button>
+              <button ngbDropdownItem>Ascension Day</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      <div class = "right">
+      <div class="hq">
+         <img src="../../../assets/listicons/HQ.svg" alt="HQ"/> 0 / 0
+      </div>
+      <div class="troops">
+        <img src="../../../assets/listicons/troops.svg"alt="Troops"/> 0 / 0
+      </div>
+      <div class="fastattack">
+        <img src="../../../assets/listicons/fast-attack.svg" alt="FastAttacks"/> 0 / 0
+      </div>
+      <div class="elites">
+        <img src="../../../assets/listicons/elites.svg" alt="Elites"/> 0 / 0
+      </div>
+      <div class="heavysupport">
+        <img src="../../../assets/listicons/heavy-support.svg" alt="HeavySupport"/> 0 / 0
+      </div>
+      <div class="dedicatedtrans">
+        <img src="../../../assets/listicons/dedicated-transport.svg" alt="DedicatedTransport"/> 0 / 0
+      </div>
+      <div class="flyer">
+        <img src="../../../assets/listicons/flyer.svg" alt="Flyer"/> 0 / 0
+      </div>
+      <div class="fortification">
+        <img src="../../../assets/listicons/fortification.svg" alt="Fortification"/> 0 / 0
+      </div>
+      <div class="lordofwar">
+        <img src="../../../assets/listicons/lord-of-war.svg" alt="Lord of War"/> 0 / 0
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="listbuilder">
+<div class="allmodels">
+<app-accordion [items] = "itemser"></app-accordion>
+</div>
+<div class="allmodels">
+  <app-listview [listOfModels] = "listOfModels"></app-listview>
+</div>
+</div>
+

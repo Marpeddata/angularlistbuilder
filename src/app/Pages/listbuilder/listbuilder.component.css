@@ -1,0 +1,60 @@
+.listbuilder{
+    border: 3px solid #fff;
+    padding: 20px;
+    
+}
+
+.allmodels{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin-right: auto;
+    
+  
+}
+
+.picksection {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.main {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    display: block; 
+    
+    
+  }
+  
+  .right > div {
+    width: 10%;
+    display: inline-block; /* Change to inline-block */
+    margin-right: 3px; 
+  }
+  
+  .right img {
+    width: 100%; 
+  }
+
+
+
+.left {
+  display: block; 
+  
+}
+.left > div {
+    display: inline-block; 
+    margin-right: 10px; 
+  }
+
+.left .row {
+  margin-bottom: 0; 
+}
+
+.left .dropdown {
+  margin-left: auto; 
+}

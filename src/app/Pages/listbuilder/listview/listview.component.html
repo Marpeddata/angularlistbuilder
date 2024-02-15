@@ -1,0 +1,25 @@
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Points</th>
+			<th scope="col">Size</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (model of listOfModels; track model.name; let i = $index) {
+      
+			<tr>
+				<th scope="row">{{ i + 1 }}</th>
+				<td>
+				
+					{{ model.name }}
+				</td>
+				<td>{{ model.points | number }}</td>
+				<td>{{ model.size | number }}</td>
+			</tr>
+		}
+	</tbody>
+</table>
